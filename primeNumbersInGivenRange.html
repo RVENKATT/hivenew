@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Showing prime numbers with in given range.</title>
+	</head>
+	<body>
+	<h1>Dispaly Prime Numbers between 0 to 10</h1>
+		<script type="text/javascript">
+			var range = 10;
+			var temp = 0;
+			for (var i = 1; i <= range; i++){
+				temp = 0;
+				for (var k = 1; k <= i; k++){
+					if (i % k == 0) {
+						temp++;
+					}
+					if (temp > 2) {
+						break;
+					}
+				}
+				if (temp == 2) {
+					console.log(i +" Is primie");
+				}
+			}
+		</script>
+	</body>
+</html>
